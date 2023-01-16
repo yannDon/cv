@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color: grey;
+}
+
+
+header {
+    padding: 20px;
+    background-color: black;
+    color: rgb(201, 199, 199);
+} 
+
+ul li {
+    padding: 20px;
+}
+a {
+    padding: 20px;
+} 
+
+

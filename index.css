@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color: grey;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+} 
+header {
+    padding: 20px;
+    background-color: black;
+    color: rgb(201, 199, 199);
+    
+    
+   
+} 
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.category {
+    padding: 20px;
+    
+    background-color: black;
+    padding-bottom: 20px;
+} 
+
+.skills a{
+    color: white;
+    padding: 20px;
+    
+}
+h2 {
+    background-color: rgb(54, 53, 53);
+    color: rgb(192, 192, 192);
+    text-align: center;
+    padding: 10px;
+} 
+
+p {
+    background-color: grey;
+    padding: 10px;
+    
+    
+}
+
+    
+
+.foot a {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
