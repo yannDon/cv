@@ -20,7 +20,9 @@ h3 {
     padding: 20px;
     font-size: 18px;
 }
-
+section {
+    height: 60%;
+}
 ul li {
     list-style-type: none;
 }
@@ -30,9 +32,13 @@ p {
     
 }
 a {
-    padding: 20px;
+    padding: 10px;
 } 
-
+.foot {
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+}
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;

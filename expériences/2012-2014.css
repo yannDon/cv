@@ -27,8 +27,16 @@ p {
     background-color: gray;
 }
 a {
-    padding: 20px;
+    padding: 10px;
 } 
+section {
+    height: 60%;
+}
+.foot {
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+}
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;

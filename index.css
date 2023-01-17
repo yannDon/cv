@@ -15,7 +15,7 @@ li {
 header {
     padding: 20px;
     background-color: black;
-    color: rgb(201, 199, 199);
+    color: white;
     margin-bottom: 20px;
     
     
@@ -42,22 +42,24 @@ header {
 .skills a{
     color: white;
     padding: 20px;
+    text-decoration: none;
     
 }
 
 
 p {
     background-color: grey;
-    padding: 10px;
+    padding: 15px;
     
     
 }
 
 .sub-title {
     background-color: rgb(54, 53, 53);
-    color: rgb(192, 192, 192);
+    color: white;
     text-align: center;
     padding: 10px;
+    margin-bottom: 15px;
 }    
 
 .foot a {
