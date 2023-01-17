@@ -27,7 +27,7 @@ ul li {
 p {
     padding: 20px;
     background-color: gray;
-    font-size: 17px;
+    
 }
 a {
     padding: 20px;
@@ -53,35 +53,17 @@ a {
 }
 @media screen and (min-width: 800px) {
     
-    .title {
-        
-    }
-    .sub-title {
-        
-    }
+    
+    
     p {
         margin-right: 40px;
         padding-top: 40px;
         
     }
-    a {
-        
-    }
+    
 }
-@media screen and (min-width: 1000px) {
-    .title {
 
-    }
-    .sub-title {
 
-    }
-    p {
-
-    }
-    a {
-
-    }
-}
 @media screen and (min-width: 1200px) {
     html {
         background-color: rgb(192, 188, 188);
@@ -92,15 +74,15 @@ a {
     }
     
     .title {
-
+        padding-left: 50px;
     }
     .sub-title {
-
-    }
+        padding-left: 50px;
+    }   
     p {
-
+        padding-left: 50px; 
     }
     a {
-
+        padding-left: 50px;     
     }
 }

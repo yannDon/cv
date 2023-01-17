@@ -17,9 +17,61 @@ header {
 
 ul li {
     padding: 20px;
+    list-style-type: none;
 }
 a {
     padding: 20px;
 } 
 
+@media screen and (min-width: 600px) {
+    .title {
+        font-size: 28px;
+        padding: 30px;
+        text-align: center;
+    }
+    ul li {
+        font-size: 20px;
+        
+    }
+    
+    a {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 800px) {
+    
+    
+    
+    ul  {
+        
+        padding-top: 20px;
+        margin-left: 40px;
+        
+    }
+    ul li {
+        padding: 20px;
+        font-size: 20px;
+    }
+}
 
+
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: rgb(192, 188, 188);
+    }
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    ul li {
+        padding-left: 25px;
+    }
+    p {
+        padding-left: 40px;
+    }
+    a {
+        padding-left: 40px;
+    }
+}
