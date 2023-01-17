@@ -8,15 +8,17 @@ html, body {
     background-color: grey;
 }
 
-h1 {
+.title {
     background-color: black;
     padding: 20px;
     color: white;
+    font-size: 22px;
 }
-h2 {
-    background-color: grey;
+h3 {
+    background-color: rgb(90, 87, 87);
     color: black;
     padding: 20px;
+    font-size: 18px;
 }
 
 ul li {
@@ -25,8 +27,80 @@ ul li {
 p {
     padding: 20px;
     background-color: gray;
+    font-size: 17px;
 }
 a {
     padding: 20px;
 } 
 
+@media screen and (min-width: 600px) {
+    .title {
+        font-size: 28px;
+        padding: 30px;
+    }
+    .sub-title {
+        font-size: 24px;
+        padding: 30px;
+    }   
+    p {
+        padding: 30px;
+        font-size: 20px;
+    }
+    a {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 800px) {
+    
+    .title {
+        
+    }
+    .sub-title {
+        
+    }
+    p {
+        margin-right: 40px;
+        padding-top: 40px;
+        
+    }
+    a {
+        
+    }
+}
+@media screen and (min-width: 1000px) {
+    .title {
+
+    }
+    .sub-title {
+
+    }
+    p {
+
+    }
+    a {
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: rgb(192, 188, 188);
+    }
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .title {
+
+    }
+    .sub-title {
+
+    }
+    p {
+
+    }
+    a {
+
+    }
+}

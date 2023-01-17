@@ -23,6 +23,7 @@ header {
 .nav {
     display: flex;
     flex-direction: column;
+    
 }
 .name {
     text-align: center;
@@ -36,18 +37,15 @@ header {
     background-color: black;
     padding-bottom: 20px;
 } 
-
+.category select {
+    margin-bottom: 10px;
+}
 .skills a{
     color: white;
     padding: 20px;
     
 }
-h2 {
-    background-color: rgb(54, 53, 53);
-    color: rgb(192, 192, 192);
-    text-align: center;
-    padding: 10px;
-} 
+
 
 p {
     background-color: grey;
@@ -56,10 +54,92 @@ p {
     
 }
 
-    
+.sub-title {
+    background-color: rgb(54, 53, 53);
+    color: rgb(192, 192, 192);
+    text-align: center;
+    padding: 10px;
+}    
 
 .foot a {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+} 
+
+@media screen and (min-width: 600px) { 
+    .sub-title {
+       font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .category select {
+        font-size: 16px;
+    }
+    .skills li > a{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 800px) { 
+    .sub-title {
+       font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .category select {
+        font-size: 16px;
+    }
+    .skills li > a{
+        font-size: 18px;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1000px) { 
+    .sub-title {
+       font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+        
+        
+    }
+    .category select {
+        font-size: 18px;
+    }
+    .skills li > a{
+        font-size: 20px;
+    }
+    .name {
+        font-size: 27px;
+    }
+}
+@media screen and (min-width: 1200px) { 
+    html {
+        background-color: rgb(192, 188, 188);
+    }
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .sub-title {
+       font-size: 25px;
+    }
+    p {
+        font-size: 20px;
+        
+        
+    }
+    .category select {
+        font-size: 18px;
+    }
+    .skills li > a{
+        font-size: 20px;
+    }
+    .name {
+        font-size: 27px;
+    }
 }
