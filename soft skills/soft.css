@@ -2,71 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-html, body {
+}
+html,
+body {
     height: 100%;
     background-color: grey;
 }
-
-h2 {
+.header {
+    display: flex;
+    
+    width: 100%;
+}
+.header-link {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(15, 6, 6);
+    border-left: 5px solid rgba(255, 0, 0, 0.274);
+    border-right: 5px solid rgba(255, 0, 0, 0.24);
+    align-items: center;
+}
+.header-link a {
+    color: white;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     padding: 20px;
     color: white;
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 20px;
+    width: 80%;
 }
 
-
+.ul {
+    padding: 20px;
+    margin-left: 30px;
+}
 ul li {
     padding: 20px;
-    margin-left: 60px;
-    
+    list-style-type: circle;
 }
-
-
-section {
-    height: 70%;
+span {
+    font-weight: bold;
+}
+p {
+    padding: 20px;
+    background-color: gray;
 }
 a {
     padding: 10px;
 }
-.foot {
-    display: flex;
-    justify-content: end;
-    padding-right: 40px;
-}
+
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;
         padding: 30px;
-        text-align: center;
     }
-    ul li {
+    .ul {
+        margin-left: 50px;
         font-size: 20px;
-        
     }
-    
+    p {
+        padding: 30px;
+        font-size: 20px;
+    }
     a {
         font-size: 20px;
         padding: 30px;
     }
-}
-@media screen and (min-width: 800px) {
-    
-    
-    
-    ul  {
-        
-        padding-top: 20px;
-        margin-left: 40px;
-        
-    }
-    ul li {
-        padding: 20px;
+    .years {
         font-size: 20px;
     }
 }
-
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 32px;
+    }
+    .ul {
+        
+        font-size: 22px;
+    }
+    p {
+        font-size: 22px;
+        padding-top: 40px;
+    }
+    
+}
 
 @media screen and (min-width: 1200px) {
     html {
@@ -76,14 +100,17 @@ a {
         max-width: 1200px;
         margin: auto;
     }
-    
-    ul li {
-        padding-left: 25px;
+
+    .title {
+        padding-left: 50px;
+    }
+    .list {
+        padding-left: 50px;
     }
     p {
-        padding-left: 40px;
+        padding-left: 50px;
     }
     a {
-        padding-left: 40px;
+        padding-left: 50px;
     }
 }

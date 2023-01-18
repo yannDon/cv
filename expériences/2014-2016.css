@@ -2,23 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-html, body {
+}
+html,
+body {
     height: 100%;
     background-color: grey;
 }
-
+.header {
+    display: flex;
+    width: 100%;
+}
+.header-link {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(15, 6, 6);
+    border-left: 5px solid rgba(255, 0, 0, 0.274);
+    border-right: 5px solid rgba(255, 0, 0, 0.24);
+    align-items: center;
+}
+.header-link a {
+    color: white;
+}
 .title {
+    display: flex;
+    align-items: center;
     background-color: black;
     padding: 20px;
     color: white;
+    font-size: 20px;
+    width: 80%;
 }
-h3 {
+.sub-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 20px;
     background-color: rgb(90, 87, 87);
     color: black;
-    padding: 20px;
+    font-size: 18px;
+    border-bottom: 5px solid rgba(255, 0, 0, 0.26);
 }
+.school {
+    width: 80%;
+}
+.years {
+    width: 20%;
+    display: flex;
+    justify-content: center;
 
+    font-size: 15px;
+}
+section {
+    height: 60%;
+}
 ul li {
     list-style-type: none;
 }
@@ -28,15 +66,8 @@ p {
 }
 a {
     padding: 10px;
-} 
-section {
-    height: 70%;
 }
-.foot {
-    display: flex;
-    justify-content: end;
-    padding-right: 40px;
-}
+
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;
@@ -44,8 +75,8 @@ section {
     }
     .sub-title {
         font-size: 24px;
-        padding: 30px;
-    }   
+        padding: 5px 5px 5px 30px;
+    }
     p {
         padding: 30px;
         font-size: 20px;
@@ -54,20 +85,25 @@ section {
         font-size: 20px;
         padding: 30px;
     }
+    .years {
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 800px) {
-    
-    section {
-        height: 65%;
+    .title {
+        font-size: 32px;
     }
     p {
-        margin-right: 40px;
+        font-size: 22px;
         padding-top: 40px;
-        
     }
-    
+    .school {
+        font-size: 26px;
+    }
+    .years {
+        font-size: 22px;
+    }
 }
-
 
 @media screen and (min-width: 1200px) {
     html {
@@ -77,17 +113,18 @@ section {
         max-width: 1200px;
         margin: auto;
     }
-    
+
     .title {
         padding-left: 50px;
+        
     }
     .sub-title {
         padding-left: 50px;
-    }   
+    }
     p {
-        padding-left: 50px; 
+        padding-left: 50px;
     }
     a {
-        padding-left: 50px;     
+        padding-left: 50px;
     }
 }
