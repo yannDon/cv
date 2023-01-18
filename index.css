@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+html,
+body {
     height: 100%;
     background-color: grey;
 }
@@ -11,16 +12,13 @@ html, body {
 li {
     list-style-type: none;
     display: inline-block;
-} 
+}
 header {
     padding: 20px;
     background-color: black;
     color: white;
     margin-bottom: 20px;
-    
-    
-   
-} 
+}
 .nav {
     display: flex;
     align-items: center;
@@ -34,24 +32,19 @@ header {
     font-size: 20px;
     margin-bottom: 30px;
 }
-.category select{
+.category select {
     margin-right: 10px;
 }
 
-
-.skills a{
+.skills a {
     color: white;
     padding: 20px;
     text-decoration: none;
-    
 }
-
 
 p {
     background-color: grey;
     padding: 15px;
-    
-    
 }
 
 .sub-title {
@@ -60,17 +53,17 @@ p {
     text-align: center;
     padding: 10px;
     margin-bottom: 15px;
-}    
+}
 
 .foot a {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-} 
+}
 
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 600px) {
     .sub-title {
-       font-size: 22px;
+        font-size: 22px;
     }
     p {
         font-size: 18px;
@@ -78,13 +71,13 @@ p {
     .category select {
         font-size: 16px;
     }
-    .skills li > a{
+    .skills li > a {
         font-size: 18px;
     }
 }
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 800px) {
     .sub-title {
-       font-size: 25px;
+        font-size: 25px;
     }
     p {
         font-size: 20px;
@@ -92,33 +85,31 @@ p {
     .category select {
         font-size: 16px;
     }
-    .skills li > a{
+    .skills li > a {
         font-size: 18px;
     }
     .name {
         font-size: 25px;
     }
 }
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
     .sub-title {
-       font-size: 25px;
+        font-size: 25px;
     }
     p {
         font-size: 20px;
-        
-        
     }
     .category select {
         font-size: 18px;
     }
-    .skills li > a{
+    .skills li > a {
         font-size: 20px;
     }
     .name {
         font-size: 27px;
     }
 }
-@media screen and (min-width: 1200px) { 
+@media screen and (min-width: 1200px) {
     html {
         background-color: rgb(192, 188, 188);
     }
@@ -127,17 +118,16 @@ p {
         margin: auto;
     }
     .sub-title {
-       font-size: 25px;
+        font-size: 25px;
     }
     p {
         font-size: 20px;
         padding: 40px;
-        
     }
     .category select {
         font-size: 18px;
     }
-    .skills li > a{
+    .skills li > a {
         font-size: 20px;
     }
     .name {
