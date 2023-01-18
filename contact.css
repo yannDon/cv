@@ -21,6 +21,7 @@ ul li {
 }
 a {
     padding: 10px;
+    text-decoration: none;
 } 
 section {
     height: 70%;
