@@ -59,6 +59,24 @@ p {
     height: auto;
     
 }
+.container {
+    position: relative;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: white;
+}
+.container:hover .text {
+    display: block;
+
+}
+.container:hover #tel-logo {
+    display: none;
+}
 @media screen and (min-width: 600px) {
     .title {
         font-size: 28px;
@@ -85,6 +103,9 @@ p {
         margin: auto;
         margin-top: 10%;
     }
+    .text {
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -103,5 +124,7 @@ p {
     p {
         padding-left: 50px;
     }
-    
+    .text {
+        font-size: 25px;
+    }
 }
