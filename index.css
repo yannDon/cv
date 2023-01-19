@@ -6,7 +6,7 @@
 html,
 body {
     height: 100%;
-    background-color: rgb(161, 161, 161)
+    background-color: grey
 }
 body {
     
@@ -37,7 +37,11 @@ header {
 .category select {
     margin-right: 10px;
 }
-
+#nantes {
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+}
 .skills a {
     color: white;
     padding: 20px;
@@ -103,8 +107,29 @@ p {
     .intro {
         display: flex;
     }
+    
+    
     .img {
         width: 50%;
+    }
+    #nantes {
+        width: 100%;
+        object-fit: cover;
+        max-height: auto;
+    }
+    .intro2 {
+        display: flex;
+        margin-top: 5px;
+    }
+    .article2 {
+        width: 50%;
+        margin-left: 5px;
+        
+    }
+    .ville {
+        width: 50%;
+        
+       
     }
     html, body {
         

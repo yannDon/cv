@@ -1,81 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV-Web</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header class="head">
-      <nav>
-        <ul>
-            <div class="name">
-                <h1>Yann Donzow</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CV-Web</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header class="head">
+            <nav>
+                <ul>
+                    <div class="name">
+                        <h1>Yann Donzow</h1>
+                    </div>
+                    <div class="nav">
+                        <div class="category">
+                            <select onchange="Formation" id="Formation">
+                                <option value="formation" disabled selected>
+                                    Formation
+                                </option>
+                                <option value="formation\cap.html">
+                                    CAP PROELEC
+                                </option>
+                                <option value="formation\bac.html">
+                                    BAC PRO ELEEC
+                                </option>
+                                <option value="formation\open.html">
+                                    OPENCLASSROOM
+                                </option>
+                            </select>
+                            <select onchange="Expérience" id="Experience">
+                                <option value="Experiences" disabled selected>
+                                    Expérience
+                                </option>
+                                <option value="expériences\2012-2014.html">
+                                    élecrotechnique 2012/2014
+                                </option>
+                                <option value="expériences\2014-2016.html">
+                                    élecrotechnique 2014/2016
+                                </option>
+                            </select>
+                        </div>
+                        <div class="skills">
+                            <li>
+                                <a href="soft skills/soft.html">Soft skill</a>
+                            </li>
+                            <li>
+                                <a href="hard skills/hard.html">Hard skill</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="intro">
+                <img
+                    class="img"
+                    src="/assets/srtilege_a_man_typing_on_computer_code_go_out_the_screen_hand__e9bab4f4-fc00-4265-89c6-57f2119fc1c6.png"
+                    alt=""
+                />
+                <div class="article1">
+                    <h3 class="sub-title">Aprentissage Intégrateur Web</h3>
+                    <p>
+                        Ayant déjà été apprenti j'ai conscience du potentiel de
+                        connaissances auxquelles je pourrais avoir accès grâce à
+                        vous, bien entendu un apprenti doit savoir collaborer et
+                        réaliser des missions dans le respect des clients et de
+                        leurs demandes. <br /><br />
+
+                        Avec votre aide et celle de mes futurs collègues, je
+                        voudrais devenir utile à ma future entreprise et rendre
+                        ce que l'on m'offre. <br /><br />
+
+                        Pouvoir être formé dans le respect de vos traditions et
+                        de vos exigences me permettrait de devenir je l'éspère
+                        un élément fiable et essentiel à votre entreprise.
+                    </p>
+                </div>
             </div>
-            <div class="nav">
-              <div class="category">
-                <select onchange="Formation"id="Formation">
-                    <option value="formation" disabled selected>Formation</option>
-                    <option value="formation\cap.html">CAP PROELEC</option>
-                    <option value="formation\bac.html">BAC PRO ELEEC</option>
-                    <option value="formation\open.html">OPENCLASSROOM</option>
-                </select>
-                <select onchange="Expérience" id="Experience">
-                    <option value="Experiences" disabled selected>Expérience</option>
-                    <option value="expériences\2012-2014.html">élecrotechnique 2012/2014</option>
-                    <option value="expériences\2014-2016.html">élecrotechnique 2014/2016</option>
-                </select>
-              </div>
-              <div class="skills">
-                <li><a href="soft skills/soft.html">Soft skill</a></li>
-                <li><a href="hard skills/hard.html">Hard skill</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </div>
+
+            <div class="intro2">
+                <div class="ville">
+                  <h3 class="sub-title">Zone de recherche</h3>
+                  <img id="nantes" src="/assets/nantes.png" alt="">
+                </div>
+                <div class="article2">
+                    <h3 class="sub-title">A propos de moi</h3>
+                    <p>
+                        Persévérant, déterminé et de formation en
+                        électrotechnique, je souhaite me réorienter dans
+                        l'intégration web, autodidacte depuis maintenant
+                        quelques mois, l'apprentissage me permettrait d'accéder
+                        aux savoirs de personnes expérimentées afin d'évoluer.
+                        <br /><br />
+                        Je suis de nature calme et sérieuse, mais sais
+                        communiquer et travailler en équipe, j'aime apprendre de
+                        nouvelles choses et réaliser mes objectifs.
+                    </p>
+                </div>
             </div>
-            
-                
-            
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="intro">
-        <img class="img" src="/assets/srtilege_a_man_typing_on_computer_code_go_out_the_screen_hand__e9bab4f4-fc00-4265-89c6-57f2119fc1c6.png" alt="">
-        <div class="article1">
-        <h3 class="sub-title">Aprentissage Intégrateur Web</h3>
-        <p>
-          Ayant déjà été apprenti j'ai conscience du potentiel de connaissances 
-          auxquelles je pourrais avoir accès grâce à vous, bien entendu
-          un apprenti doit savoir collaborer et réaliser des missions dans
-          le respect des clients et de leurs demandes. <br><br>
-  
-          Avec votre aide et celle de mes futurs collègues, je voudrais devenir utile
-          à ma future entreprise et rendre ce que l'on m'offre. <br><br>
-  
-          Pouvoir être formé dans le respect de vos traditions et 
-          de vos exigences me permettrait de devenir je l'éspère un élément fiable
-          et essentiel à votre entreprise.
-        </p>
-        </div>
-      </div>
-      
-      
-       <div class="article2">
-      
-      <h3 class="a-propos">A propos de moi</h3>
-      <p>Persévérant, déterminé et de formation en électrotechnique,
-        je souhaite me réorienter dans l'intégration web, autodidacte
-        depuis maintenant quelques mois, l'apprentissage me
-        permettrait d'accéder aux savoirs de personnes
-        expérimentées afin d'évoluer.</p>
-      </div> 
-      
-    </main>
-    
-    <script src="formation\formation.js"></script>
-    <script src="expériences\experience.js"></script>
-    
-  </body>
+        </main>
+
+        <script src="formation\formation.js"></script>
+        <script src="expériences\experience.js"></script>
+    </body>
 </html>

@@ -18,8 +18,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgb(15, 6, 6);
-    border-left: 5px solid rgba(255, 0, 0, 0.274);
-    border-right: 5px solid rgba(255, 0, 0, 0.24);
+    border-left: 5px solid rgba(0, 0, 139, 0.315);
+    border-right: 5px solid rgba(0, 0, 139, 0.315);
     align-items: center;
 }
 .header-link a {
@@ -43,7 +43,7 @@ body {
     background-color: rgb(90, 87, 87);
     color: black;
     font-size: 18px;
-    border-bottom: 5px solid rgba(255, 0, 0, 0.26);
+    border-bottom: 5px solid rgba(0, 0, 139, 0.315);
 }
 .school {
     width: 80%;
