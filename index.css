@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     height: 100%;
@@ -34,6 +35,7 @@ header {
     margin-right: 10px;
 }
 #nantes {
+    display: block;
     object-fit: cover;
     width: 100%;
     max-height: auto;
@@ -44,7 +46,8 @@ header {
     text-decoration: none;
 }
 
-.img {
+.img-clavier {
+    display: block;
     object-fit: cover;
     width: 100%;
     max-height: auto;
@@ -52,6 +55,7 @@ header {
 .article1,
 .article2 {
     background-color: rgb(56, 57, 82);
+    overflow: hidden;
 }
 
 p {
@@ -75,6 +79,7 @@ p {
 @media screen and (min-width: 600px) {
     .sub-title {
         font-size: 22px;
+        overflow: hidden;
     }
     p {
         font-size: 18px;
@@ -89,31 +94,39 @@ p {
         display: flex;
     }
 
-    .img {
+    .img-clavier {
         width: 50%;
     }
     #nantes {
         width: 100%;
-        object-fit: cover;
-        max-height: auto;
+        height: auto;
+        object-fit: contain;
     }
     .intro2 {
         display: flex;
         margin-top: 5px;
     }
-    .article2 {
-        width: 50%;
+    .article2,
+    .article1 {
         margin-left: 5px;
+
+        border-radius: 10px;
+        border-radius: 10px;
     }
     .ville {
-        width: 50%;
+        width: 100%;
+
+        border-radius: 10px;
+        overflow: hidden;
     }
 
     header {
         margin-bottom: 5px;
     }
-    .article1 {
-        margin-left: 5px;
+    .img-clavier {
+        border-radius: 10px;
+    }
+    .sub-title {
     }
 }
 @media screen and (min-width: 800px) {
