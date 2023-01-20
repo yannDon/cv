@@ -7,7 +7,7 @@
 html,
 body {
     height: 100%;
-    background-color: rgba(156, 155, 155, 0.514);
+    
 }
 
 li {
@@ -33,7 +33,7 @@ header {
     
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    
     
 }
 .category select {
@@ -53,6 +53,7 @@ header {
 .skills {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -100,7 +101,14 @@ p {
     justify-content: center;
     padding-top: 20px;
 }
-
+@media screen and (min-width: 500px) {
+    .skills a{
+        margin: 30px;
+    }
+    .category {
+        justify-content: space-around;
+    }
+}
 @media screen and (min-width: 600px) {
     .name {
         font-size: 20px;
@@ -115,6 +123,7 @@ p {
     .category select {
         font-size: 14px;
     }
+    
     .skills a {
         font-size: 14px;
     }
@@ -170,6 +179,7 @@ p {
         font-size: 16px;
     }
     .category select {
+        width: 120px;
         font-size: 16px;
     }
     .skills li > a {
@@ -188,11 +198,14 @@ p {
     }
     .category select {
         font-size: 16px;
+        margin-left: 20px;
     }
     .skills a {
         font-size: 16px;
+        
     }
     .name {
+        padding-right: 20px;
         font-size: 24px;
     }
 }
