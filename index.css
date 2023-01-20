@@ -17,6 +17,9 @@ li {
 header {
     padding: 15px;
     background-color: rgba(119, 120, 172, 0.986);
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(146,119,172,1) 21%, rgba(89,0,255,0.6923144257703081) 100%);
+    
     color: black;
     
 }
@@ -211,8 +214,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
     header {
-        display: flex;
-        justify-content: center;
+       
         
     }
     main {
@@ -236,5 +238,11 @@ p {
         display: flex;
         align-items: center;
         font-size: 30px;
+    }
+    .nav {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-between;
+        margin: auto;
     }
 }
