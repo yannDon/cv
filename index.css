@@ -15,33 +15,33 @@ li {
     display: inline-block;
 }
 header {
-    padding: 10px;
+    padding: 15px;
     background-color: rgba(119, 120, 172, 0.986);
     color: black;
-}
-.nav {
-    
-    
-    
     
 }
+
 
 .name {
     text-align: center;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 .category {
     display: flex;
+    
     justify-content: center;
-    padding-bottom: 5px;
+    align-items: center;
+    padding-bottom: 10px;
     
 }
 .category select {
-    width: 100px;
-    background-color: rgba(156, 155, 155, 0.514);
     margin: 10px;
+    width: 100px;
+    background-color: white;
+    height: 20px;
+    font-size: 14px;
 }
 
 #nantes {
@@ -59,8 +59,13 @@ header {
 .skills a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
     text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .img-clavier {
@@ -68,6 +73,7 @@ header {
     object-fit: cover;
     width: 100%;
     max-height: auto;
+    
 }
 .article1,
 .article2 {
@@ -78,6 +84,7 @@ header {
 p {
     color: black;
     padding: 15px;
+    font-size: 14px;
 }
 
 .sub-title {
@@ -85,6 +92,7 @@ p {
     color: black;
     text-align: center;
     padding: 10px;
+    font-size: 16px;
 }
 
 .foot a {
@@ -94,21 +102,25 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+    .name {
+        font-size: 20px;
+    }
     .sub-title {
-        font-size: 22px;
+        font-size: 18px;
         overflow: hidden;
     }
     p {
-        font-size: 18px;
+        font-size: 14px;
     }
     .category select {
-        font-size: 16px;
+        font-size: 14px;
     }
-    .skills li > a {
-        font-size: 18px;
+    .skills a {
+        font-size: 14px;
     }
     .intro {
         display: flex;
+        margin-top: 10px;
     }
 
     .img-clavier {
@@ -143,70 +155,73 @@ p {
     .img-clavier {
         border-radius: 10px;
     }
-    .sub-title {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
+
 @media screen and (min-width: 800px) {
     .sub-title {
-        font-size: 25px;
+        font-size: 18px;
     }
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .category select {
         font-size: 16px;
     }
     .skills li > a {
-        font-size: 18px;
+        font-size: 16px;
     }
     .name {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 1000px) {
     .sub-title {
-        font-size: 25px;
-    }
-    p {
-        font-size: 20px;
-    }
-    .category select {
         font-size: 18px;
     }
-    .skills li > a {
-        font-size: 20px;
+    p {
+        font-size: 16px;
+    }
+    .category select {
+        font-size: 16px;
+    }
+    .skills a {
+        font-size: 16px;
     }
     .name {
-        font-size: 27px;
+        font-size: 24px;
     }
 }
 @media screen and (min-width: 1200px) {
     header {
         display: flex;
         justify-content: center;
-        margin: auto;
-        max-width: 1200px;
+        
     }
     main {
         max-width: 1200px;
         margin: auto;
     }
     .sub-title {
-        font-size: 25px;
+        font-size: 24px;
     }
     p {
-        font-size: 20px;
+        font-size: 16px;
         padding: 40px;
     }
     .category select {
-        font-size: 12px;
+        font-size: 16px;
     }
-    .skills li > a {
-        font-size: 12px;
+    .skills a {
+        font-size: 16px;
     }
     .name {
         display: flex;
         align-items: center;
-        font-size: 16px;
+        font-size: 30px;
     }
 }
