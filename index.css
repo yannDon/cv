@@ -7,6 +7,7 @@
 html,
 body {
     height: 100%;
+    background-color: rgba(156, 155, 155, 0.514);
 }
 
 li {
@@ -15,33 +16,44 @@ li {
 }
 header {
     padding: 10px;
-    background-color: black;
-    color: white;
+    background-color: rgba(119, 120, 172, 0.986);
+    color: black;
 }
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 139, 0.315);
+    
+    
+    
+    
 }
 
 .name {
     text-align: center;
     padding-bottom: 10px;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    
 }
-.category select {
-    margin-right: 10px;
+.category {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    
 }
+
 #nantes {
     display: block;
     object-fit: cover;
     width: 100%;
     max-height: auto;
 }
+.skills {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .skills a {
-    color: white;
+    text-decoration: none;
+    color: black;
     padding: 20px;
     text-decoration: none;
 }
@@ -54,7 +66,7 @@ header {
 }
 .article1,
 .article2 {
-    background-color: rgb(56, 57, 82);
+    background-color: rgb(226, 224, 224);
     overflow: hidden;
 }
 
@@ -64,8 +76,8 @@ p {
 }
 
 .sub-title {
-    background-color: black;
-    color: white;
+    background-color: rgba(119, 120, 172, 0.986);
+    color: black;
     text-align: center;
     padding: 10px;
 }
@@ -104,11 +116,11 @@ p {
     }
     .intro2 {
         display: flex;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .article2,
     .article1 {
-        margin-left: 5px;
+        margin-left: 10px;
 
         border-radius: 10px;
         border-radius: 10px;
@@ -121,7 +133,7 @@ p {
     }
 
     header {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .img-clavier {
         border-radius: 10px;
@@ -164,7 +176,13 @@ p {
     }
 }
 @media screen and (min-width: 1200px) {
-    body {
+    header {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 1200px;
+    }
+    main {
         max-width: 1200px;
         margin: auto;
     }
@@ -176,12 +194,14 @@ p {
         padding: 40px;
     }
     .category select {
-        font-size: 18px;
+        font-size: 12px;
     }
     .skills li > a {
-        font-size: 20px;
+        font-size: 12px;
     }
     .name {
-        font-size: 27px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
     }
 }
