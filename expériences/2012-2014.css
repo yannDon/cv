@@ -178,6 +178,9 @@ p {
         font-size: 20px;
         
     }
+    .nav {
+        justify-content: space-between;
+    }
 }
 @media screen and (min-width: 1000px) {
     .sub-title {
