@@ -217,10 +217,7 @@ p {
     }
 }
 @media screen and (min-width: 1200px) {
-    header {
-       
-        
-    }
+    
     main {
         max-width: 1200px;
         margin: auto;

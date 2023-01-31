@@ -59,8 +59,7 @@ header {
     width: 100%;
     max-height: auto;
 }
-.article1,
-.article2 {
+.article1 {
     background-color: rgb(226, 224, 224);
     overflow: hidden;
 }
@@ -79,11 +78,7 @@ p {
     font-size: 16px;
 }
 
-.foot a {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+
 @media screen and (min-width: 500px) {
     .skills a {
         margin: 30px;
@@ -120,30 +115,19 @@ p {
         border-radius: 10px;
     }
 
-    .intro2 {
-        display: flex;
-        margin-top: 10px;
-    }
-    .article2,
+    
+    
     .article1 {
         margin-left: 10px;
 
         border-radius: 10px;
         border-radius: 10px;
     }
-    .ville {
-        width: 100%;
-
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
+    
     header {
         margin-bottom: 10px;
     }
-    .img-clavier {
-        border-radius: 10px;
-    }
+    
     .nav {
         display: flex;
         flex-wrap: wrap;

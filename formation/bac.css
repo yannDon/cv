@@ -24,7 +24,7 @@ header {
         rgba(89, 0, 255, 0.6923144257703081) 100%
     );
 
-    color: black;
+    
 }
 
 .diplome {
@@ -53,7 +53,7 @@ header {
     background-color: white;
 }
 
-.img-cap {
+.img-bac {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -115,35 +115,25 @@ p {
         margin-top: 10px;
     }
 
-    .img-cap {
+    .img-bac {
         width: 50%;
         border-radius: 10px;
     }
 
-    .intro2 {
-        display: flex;
-        margin-top: 10px;
-    }
-    .article2,
+    
+    
     .article1 {
         margin-left: 10px;
 
         border-radius: 10px;
         border-radius: 10px;
     }
-    .ville {
-        width: 100%;
-
-        border-radius: 10px;
-        overflow: hidden;
-    }
+    
 
     header {
         margin-bottom: 10px;
     }
-    .img-clavier {
-        border-radius: 10px;
-    }
+    
     .nav {
         display: flex;
         flex-wrap: wrap;

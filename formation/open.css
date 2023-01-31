@@ -27,7 +27,7 @@ header {
     color: black;
 }
 
-.diplome {
+.title {
     text-align: center;
     color: white;
     font-size: 20px;
@@ -53,14 +53,13 @@ header {
     background-color: white;
 }
 
-.img-cap {
+.img-open {
     display: block;
     object-fit: cover;
     width: 100%;
     max-height: auto;
 }
-.article1,
-.article2 {
+.article1 {
     background-color: rgb(226, 224, 224);
     overflow: hidden;
 }
@@ -79,11 +78,7 @@ p {
     font-size: 16px;
 }
 
-.foot a {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+
 @media screen and (min-width: 500px) {
     .skills a {
         margin: 20px;
@@ -91,12 +86,12 @@ p {
     .category {
         justify-content: space-around;
     }
-    .diplome {
+    .title {
         padding-bottom: 10px;
     }
 }
 @media screen and (min-width: 600px) {
-    .diplome {
+    .title {
         font-size: 20px;
         
     }
@@ -119,16 +114,13 @@ p {
         margin-top: 10px;
     }
 
-    .img-cap {
+    .img-open {
         width: 50%;
         border-radius: 10px;
     }
 
-    .intro2 {
-        display: flex;
-        margin-top: 10px;
-    }
-    .article2,
+    
+    
     .article1 {
         margin-left: 10px;
 
@@ -145,9 +137,7 @@ p {
     header {
         margin-bottom: 10px;
     }
-    .img-clavier {
-        border-radius: 10px;
-    }
+    
     .nav {
         display: flex;
         flex-wrap: wrap;
@@ -155,7 +145,7 @@ p {
     }
 }
 @media screen and (min-width: 650px) {
-    .diplome {
+    .title {
         padding-bottom: 0;
     }
 }
@@ -174,7 +164,7 @@ p {
         font-size: 16px;
     }
     
-    .diplome {
+    .title {
         font-size: 20px;
         
     }
@@ -193,7 +183,7 @@ p {
     .skills a {
         font-size: 16px;
     }
-    .diplome {
+    .title {
         padding-right: 20px;
         font-size: 24px;
     }
@@ -217,7 +207,7 @@ p {
         font-size: 16px;
     }
     
-    .diplome {
+    .title {
         display: flex;
         align-items: center;
         font-size: 26px;

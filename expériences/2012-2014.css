@@ -53,7 +53,7 @@ header {
     background-color: white;
 }
 
-.img-cap {
+.img-2012-2014 {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -119,7 +119,7 @@ p {
         margin-top: 10px;
     }
 
-    .img-cap {
+    .img-2012-2014 {
         width: 50%;
         border-radius: 10px;
     }
