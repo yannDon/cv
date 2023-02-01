@@ -53,7 +53,7 @@ header {
     background-color: white;
 }
 
-.img-cap {
+.img-2012-2014 {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -79,11 +79,7 @@ p {
     font-size: 16px;
 }
 
-.foot a {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+
 @media screen and (min-width: 500px) {
     .skills a {
         margin: 20px;
@@ -119,7 +115,7 @@ p {
         margin-top: 10px;
     }
 
-    .img-cap {
+    .img-2012-2014 {
         width: 50%;
         border-radius: 10px;
     }
@@ -128,26 +124,19 @@ p {
         display: flex;
         margin-top: 10px;
     }
-    .article2,
+    
     .article1 {
         margin-left: 10px;
 
         border-radius: 10px;
         border-radius: 10px;
     }
-    .ville {
-        width: 100%;
-
-        border-radius: 10px;
-        overflow: hidden;
-    }
+    
 
     header {
         margin-bottom: 10px;
     }
-    .img-clavier {
-        border-radius: 10px;
-    }
+    
     .nav {
         display: flex;
         flex-wrap: wrap;
@@ -177,6 +166,9 @@ p {
     .diplome {
         font-size: 20px;
         
+    }
+    .nav {
+        justify-content: space-between;
     }
 }
 @media screen and (min-width: 1000px) {
