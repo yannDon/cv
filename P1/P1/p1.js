@@ -7,7 +7,9 @@ let nav = document.getElementById("nav")
 let category = document.getElementById("category")
 let categoryChild = document.getElementById("category").children
 let grid = document.getElementById("grid")
-let gridChild = document.getElementById("grid").children
+let project = document.getElementById("grid").children
+let main = document.getElementById("main")
+let section = document.getElementsByClassName("section")
 
 function animated() {
     port.style.transform = "rotate(0deg)"
@@ -43,19 +45,22 @@ function animated() {
         nav.style.display = "flex"
         }, "2000")
     
-    for (i = 0; i < gridChild.length; i++) {
-        gridChild[i].style.transform = "rotate(0deg)"
-        gridChild[i].style.position = "static"
-        
-        gridChild[i].style.border = "1px solid black"
-        
-        
-
+    for (i = 0; i < project.length; i++) {
+        project[i].style.transform = "rotate(0deg)"
+        project[i].style.position = "static"
+        project[i].style.border = "1px solid black"
     }
+    
     grid.style.display = "grid"
     grid.style.gridTemplateColumns = "repeat(2, 1fr)"
     grid.style.width = "auto"
     grid.style.gap = "10px"
+    
+    main.style.marginLeft = "5%"
+    main.style.marginRight = "5%"
+
+    
+    
 }
 
-
+console.log(section)
