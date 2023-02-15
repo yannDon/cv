@@ -1,15 +1,15 @@
-let projet1 = document.getElementById("p1")
-let port = document.getElementById("port")
-let header = document.getElementById("header")
-let contact = document.getElementById("contact")
-let acceuil = document.getElementById("acceuil")
-let nav = document.getElementById("nav")
-let category = document.getElementById("category")
-let categoryChild = document.getElementById("category").children
-let grid = document.getElementById("grid")
-let project = document.getElementById("grid").children
-let main = document.getElementById("main")
-let section = document.getElementsByClassName("section")
+const projet1 = document.getElementById("p1")
+const port = document.getElementById("port")
+const header = document.getElementById("header")
+const contact = document.getElementById("contact")
+const acceuil = document.getElementById("acceuil")
+const nav = document.getElementById("nav")
+const category = document.getElementById("category")
+const categoryChild = document.getElementById("category").children
+const grid = document.getElementById("grid")
+const project = document.getElementById("grid").children
+const main = document.getElementById("main")
+const sections = document.querySelectorAll(".section")
 
 function animated() {
     port.style.transform = "rotate(0deg)"
@@ -59,8 +59,11 @@ function animated() {
     main.style.marginLeft = "5%"
     main.style.marginRight = "5%"
 
-    
+    sections.forEach(section => {
+        section.style.display ="block"
+        section.style.borderRadius ="5px"
+    })
     
 }
 
-console.log(section)
+console.log(sections)
