@@ -10,6 +10,9 @@ const grid = document.getElementById("grid")
 const project = document.getElementById("grid").children
 const main = document.getElementById("main")
 const sections = document.querySelectorAll(".section")
+const subTitles = document.querySelectorAll(".sub-title")
+const media600 = window.matchMedia("(min-width: 600px)").matches
+
 
 function animated() {
     port.style.transform = "rotate(0deg)"
@@ -25,6 +28,8 @@ function animated() {
     
     nav.style.justifyContent = "space-between"
     nav.style.alignItems = "center"
+    
+    
 
     category.style.display = "flex"
     
@@ -44,6 +49,7 @@ function animated() {
     setTimeout(() => {
         nav.style.display = "flex"
         }, "2000")
+        
     
     for (i = 0; i < project.length; i++) {
         project[i].style.transform = "rotate(0deg)"
@@ -53,17 +59,25 @@ function animated() {
     
     grid.style.display = "grid"
     grid.style.gridTemplateColumns = "repeat(2, 1fr)"
-    grid.style.width = "auto"
+    grid.style.gridTemplateRows = "30vh 30vh 30vh"
+    
     grid.style.gap = "10px"
     
-    main.style.marginLeft = "5%"
-    main.style.marginRight = "5%"
+    
+    
 
     sections.forEach(section => {
         section.style.display ="block"
         section.style.borderRadius ="5px"
+        section.style.backgroundColor = "rgb(226, 224, 224)"
     })
-    
+    main.style.display = "flex"
+    main.style.justifyContent = "center"
+
+    subTitles.forEach(subTitle => {
+        subTitle.style.backgroundColor ="rgba(119, 120, 172, 0.986)"
+
+    })
 }
 
-console.log(sections)
+console.log(media600)
