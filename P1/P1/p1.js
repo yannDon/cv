@@ -53,6 +53,7 @@ function animated() {
 
     setTimeout(() => {
         nav.style.display = "flex";
+        projet1.style.display = "none"
     }, "2000");
 
     
@@ -70,7 +71,7 @@ function animated() {
 
     grid.style.display = "grid";
     grid.style.gridTemplateColumns = "repeat(2, 1fr)";
-    grid.style.gridTemplateRows = "20vh 20vh 20vh";
+    grid.style.gridTemplateRows = "20vh 20vh 20vh 20vh";
     grid.style.gap = "10px";
 
     sections.forEach((section) => {
@@ -78,7 +79,7 @@ function animated() {
         section.style.display = "block";
         section.style.padding = "5px";
         section.style.backgroundColor = "rgb(226, 224, 224)"
-        section.style.height = "100%"
+        section.style.height = "200px"
     })
     main.style.display = "flex";
     main.style.justifyContent = "center";
