@@ -31,62 +31,61 @@
     border: 1px solid black;
     animation: horizontal-shaking 0.5s infinite;
 }
-#p2 {
+#janvier {
     transform: skew(-15deg);
     position: absolute;
     bottom: 50%;
     left: 70%;
     transition: all 1s ease-in-out;
-    
 }
 .section {
     display: none;
 }
-#p3 {
+#février {
     transform: rotate(-10deg);
     position: absolute;
     top: 5%;
     left: 5%;
-
     transition: all 1s ease-in-out;
 }
 
-#p4 {
+#mars {
     position: absolute;
     top: 7%;
     left: 80%;
-
     transition: all 1s ease-in-out;
 }
 
-#p5 {
+#avril {
     transform: rotate(10deg);
     position: absolute;
     bottom: 7%;
     left: 80%;
-
     transition: all 1s ease-in-out;
 }
 
-#p6 {
+#mai {
     transform: rotate(45deg);
     position: absolute;
     bottom: 20%;
     left: 40%;
-
     transition: all 1s ease-in-out;
 }
 
-#p7 {
+#juin {
     transform: rotate(45deg);
     position: absolute;
     bottom: 50%;
     left: 5%;
-
-    
     transition: all 1s ease-in-out;
 }
-
+#juillet {
+    transform: rotate(58deg);
+    position: absolute;
+    bottom: 80%;
+    left: 15%;
+    transition: all 1s ease-in-out;
+}
 #port {
     transform: translate(5%, 400px) rotate(45deg);
     transition: all 1s ease-in-out;

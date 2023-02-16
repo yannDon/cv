@@ -61,6 +61,9 @@ function animated() {
         project.style.position = "static";
         project.style.border = "1px solid black";
         project.style.overflow = "scroll";
+        project.style.borderRadius = "5px";
+        
+        
         
 
     })
@@ -71,12 +74,16 @@ function animated() {
     grid.style.gap = "10px";
 
     sections.forEach((section) => {
+        
         section.style.display = "block";
-    });
+        section.style.padding = "5px";
+        section.style.backgroundColor = "rgb(226, 224, 224)"
+        section.style.height = "100%"
+    })
     main.style.display = "flex";
     main.style.justifyContent = "center";
 
     subTitles.forEach((subTitle) => {
         subTitle.style.backgroundColor = "rgba(119, 120, 172, 0.986)";
-    });
+    })
 }
