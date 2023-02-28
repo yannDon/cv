@@ -3,106 +3,141 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@keyframes horizontal-shaking {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(5px);
-    }
-    50% {
-        transform: translateX(-5px);
-    }
-    75% {
-        transform: translateX(5px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+.header {
+    padding: 15px;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(146, 119, 172, 1) 21%,
+        rgba(89, 0, 255, 0.6923144257703081) 100%
+    );
 }
 
-#p1 {
-    position: absolute;
-    bottom: 70%;
-    left: 40%;
-    width: 5%;
-    height: 7%;
-    border: 1px solid black;
-    animation: horizontal-shaking 0.5s infinite;
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
 }
-#janvier {
-    transform: skew(-15deg);
-    position: absolute;
-    bottom: 50%;
-    left: 70%;
-    transition: all 1s ease-in-out;
+.title {
+    color: white;
+    font-size: 20px;
 }
-.section {
-    display: none;
-}
-#février {
-    transform: rotate(-10deg);
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    transition: all 1s ease-in-out;
+a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 1vw;
 }
 
-#mars {
-    position: absolute;
-    top: 7%;
-    left: 80%;
-    transition: all 1s ease-in-out;
+main {
+    margin: 20px;
 }
 
-#avril {
-    transform: rotate(10deg);
-    position: absolute;
-    bottom: 7%;
-    left: 80%;
-    transition: all 1s ease-in-out;
+.grid {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    gap: 20px;
 }
 
-#mai {
-    transform: rotate(45deg);
-    position: absolute;
-    bottom: 20%;
-    left: 40%;
-    transition: all 1s ease-in-out;
+.card {
+    height: 200px;
+    perspective: 1000px;
+    background-color: transparent;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-#juin {
-    transform: rotate(45deg);
+.card-front,
+.card-back {
     position: absolute;
-    bottom: 50%;
-    left: 5%;
-    transition: all 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
 }
-#juillet {
-    transform: rotate(58deg);
-    position: absolute;
-    bottom: 80%;
-    left: 15%;
-    transition: all 1s ease-in-out;
+.card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
 }
-#port {
-    transform: translate(5%, 400px) rotate(45deg);
-    transition: all 1s ease-in-out;
+.card:hover .card-inner {
+    /* transform: rotateY(180deg);  */
 }
 
-#contact {
+.card-front > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     display: block;
-    transform: translate(200px, 50px) rotate(5deg);
-    transition: all 1s ease-in-out;
-    font-size: 25px;
-    height: max-content;
+    border-radius: 5px;
 }
 
-#acceuil {
-    display: block;
-    transform: translate(200px, 200px) rotate(65deg);
-    transition: all 1s ease-in-out;
-    font-size: 50px;
-    height: max-content;
+
+
+@media screen and (min-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media screen and (min-width: 840px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    main {
+        margin: 30px;
+    }
+    a {
+        font-size: 16px;
+    }
+    .grid > div > img {
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    main {
+        margin: 30px;
+    }
+    .nav {
+        margin-left: 20px;
+    }
+    .title {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    main {
+        max-width: 1400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .nav {
+        max-width: 1400px;
+        margin: auto;
+    }
+    .grid {
+        gap: 50px;
+    }
 }
