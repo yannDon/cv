@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+header {
+    padding: 15px;
+    background-color: rgba(119, 120, 172, 0.986);
+
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(146, 119, 172, 1) 21%,
+        rgba(89, 0, 255, 0.6923144257703081) 100%
+    );
+
+    color: black;
+}
+
+.diplome {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.skills a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.img-2012-2014 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+}
+.article1,
+.article2 {
+    background-color: rgb(226, 224, 224);
+    overflow: hidden;
+}
+
+p {
+    color: black;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.sub-title {
+    background-color: rgba(119, 120, 172, 0.986);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+@media screen and (min-width: 500px) {
+    .skills a {
+        margin: 20px;
+    }
+    .category {
+        justify-content: space-around;
+    }
+    .diplome {
+        padding-top: 5px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .diplome {
+        font-size: 20px;
+        
+    }
+    .sub-title {
+        font-size: 18px;
+        overflow: hidden;
+    }
+    p {
+        font-size: 14px;
+    }
+    .category select {
+        font-size: 14px;
+    }
+
+    .skills a {
+        font-size: 14px;
+    }
+    .intro {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .img-2012-2014 {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .intro2 {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .article1 {
+        margin-left: 10px;
+
+        border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+
+    header {
+        margin-bottom: 10px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 650px) {
+    .diplome {
+        padding-bottom: 0;
+    }
+}
+@media screen and (min-width: 800px) {
+    .sub-title {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .category select {
+        width: 120px;
+        font-size: 16px;
+    }
+    .skills a {
+        font-size: 16px;
+    }
+    
+    .diplome {
+        font-size: 20px;
+        
+    }
+    .nav {
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .sub-title {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .skills a {
+        font-size: 16px;
+    }
+    .diplome {
+        padding-right: 20px;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        padding: 40px;
+    }
+    .category select {
+        font-size: 16px;
+    }
+    .skills a {
+        font-size: 16px;
+    }
+    
+    .diplome {
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    .nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+}

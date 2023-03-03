@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+header {
+    padding: 15px;
+    background-color: rgba(119, 120, 172, 0.986);
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(146,119,172,1) 21%, rgba(89,0,255,0.6923144257703081) 100%);
+    
+    color: black;
+    
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+.category {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.category select {
+    margin: 10px;
+    width: 100px;
+    background-color: white;
+    height: 20px;
+    font-size: 14px;
+}
+
+#nantes {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.skills a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.img-clavier {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+    
+}
+.article1,
+.article2 {
+    background-color: rgb(226, 224, 224);
+    overflow: hidden;
+}
+
+p {
+    color: black;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.sub-title {
+    background-color: rgba(119, 120, 172, 0.986);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+@media screen and (min-width: 500px) {
+    .skills {
+        margin: 10px;
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    .name {
+        font-size: 20px;
+        padding-bottom: 0;
+        padding-right: 10px;
+        align-items: center;
+    }
+    .sub-title {
+        font-size: 18px;
+        overflow: hidden;
+    }
+    p {
+        font-size: 14px;
+    }
+    .category select {
+        font-size: 14px;
+    }
+    
+    .skills a {
+        font-size: 14px;
+        
+    }
+    .intro {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .img-clavier {
+        width: 50%;
+    }
+    #nantes {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .intro2 {
+        display: flex;
+        margin-top: 10px;
+    }
+    .article2,
+    .article1 {
+        margin-left: 10px;
+
+        border-radius: 10px;
+        border-radius: 10px;
+    }
+    .ville {
+        width: 100%;
+
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+    .img-clavier {
+        border-radius: 10px;
+    }
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .sub-title {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .category select {
+        width: 120px;
+        font-size: 16px;
+    }
+    .skills li > a {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .sub-title {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .category select {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .skills a {
+        font-size: 16px;
+    }
+    
+    .name {
+        padding-right: 20px;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        padding: 40px;
+    }
+    .category select {
+        font-size: 16px;
+    }
+    .skills a {
+        font-size: 16px;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
+    .nav {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
