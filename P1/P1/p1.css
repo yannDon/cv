@@ -65,9 +65,22 @@ main {
     backface-visibility: hidden;
 }
 .card-back {
-    background-color: dodgerblue;
-    color: white;
+    font-size: 2em;
+    color: black;
     transform: rotateY(180deg);
+    border-radius: 5px;
+    border: 1px solid grey;
+    display: flex;
+    
+}
+.left-side {
+    width: 40%;
+}
+.righ-side {
+    width: 60%;
+}
+.card-back div {
+    border: 1px solid black;
 }
 .card:hover .card-inner {
     /* transform: rotateY(180deg);  */
@@ -79,6 +92,7 @@ main {
     object-fit: cover;
     display: block;
     border-radius: 5px;
+    border: 1px solid grey;
 }
 
 
