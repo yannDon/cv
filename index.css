@@ -71,8 +71,11 @@ main {
     border-radius: 5px;
     border: 1px solid grey;
     display: flex;
-    
+    background: 
+        rgba(146, 119, 172, 1) 21%;
 }
+
+
 .left-side {
     width: 40%;
 }
@@ -87,6 +90,7 @@ main {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    
 }
 
 
